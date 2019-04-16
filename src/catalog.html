@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mishka Catalog</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source media="(min-width:1250px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Mishka">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="#">
+              <svg width="17.6" height="17.6">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item  user-list__item--cart">
+            <a href="#">
+              <svg width="20.29" height="18.85">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-catalog">
+    <section class="page-catalog-content">
+      <h2 class="page-catalog-content__title">Каталог товаров</h2>
+    </section>
+    <section class="container page-catalog-goods">
+      <ul class="page-catalog-goods__list">
+        <li class="page-catalog-goods__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1250px)" srcset="img/catalog-photo-1-desktop.jpg">
+              <source media="(min-width:768px)" srcset="img/catalog-photo-1-tablet.jpg">
+              <img src="img/catalog-photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
+          <div class="description-wrapper">
+            <h3>Зайчик-попрыгайчик</h3>
+            <p>Рост 30 см, вес 200 г</p>
+            <div class="description-wrapper--botoom">
+              <span>1 200 руб.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18"
+                viewBox="0 0 21 18">
+                <image width="21" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAryBA379gUM8wcIDvEI+fQlQLGwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCQwQBApIAUKKAAAAgElEQVQY021Q0RLDIAijxWpbaM3/f+1QOiu35SHc5SSJEDkWrLRioQBGMk7goG7IxhnbLBbsfe4ok/pddaMH76Y7ER3MnHCy40QyPgj/QAKVCIW0pCuUvHri/QS80bex/LhK62g+M6C9ew0fKqhhOsYb6KQqxm3rcK3jxjk0aD0/rHcIsft1gp8AAAAASUVORK5CYII="></image>
+              </svg>
+            </div>
+          </div>
+        </li>
+        <li class="page-catalog-goods__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1250px)" srcset="img/catalog-photo-2-desktop.jpg">
+              <source media="(min-width:768px)" srcset="img/catalog-photo-2-tablet.jpg">
+              <img src="img/catalog-photo-2-mobile.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
+          <div class="description-wrapper">
+            <h3>Корзинка для белья</h3>
+            <p>Диаметр 15 см, высота 10 см</p>
+            <div class="description-wrapper--botoom">
+              <span>690 руб.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18"
+                viewBox="0 0 21 18">
+                <image width="21" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAryBA379gUM8wcIDvEI+fQlQLGwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCQwQBApIAUKKAAAAgElEQVQY021Q0RLDIAijxWpbaM3/f+1QOiu35SHc5SSJEDkWrLRioQBGMk7goG7IxhnbLBbsfe4ok/pddaMH76Y7ER3MnHCy40QyPgj/QAKVCIW0pCuUvHri/QS80bex/LhK62g+M6C9ew0fKqhhOsYb6KQqxm3rcK3jxjk0aD0/rHcIsft1gp8AAAAASUVORK5CYII="></image>
+              </svg>
+            </div>
+          </div>
+        </li>
+        <li class="page-catalog-goods__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1250px)" srcset="img/catalog-photo-3-desktop.jpg">
+              <source media="(min-width:768px)" srcset="img/catalog-photo-3-tablet.jpg">
+              <img src="img/catalog-photo-3-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
+          <div class="description-wrapper">
+            <h3>Большая корзинка для игрушек</h3>
+            <p>Диаметр 30 см, высота 30 см</p>
+            <div class="description-wrapper--botoom">
+              <span>1 500 руб.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18"
+                viewBox="0 0 21 18">
+                <image width="21" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAryBA379gUM8wcIDvEI+fQlQLGwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCQwQBApIAUKKAAAAgElEQVQY021Q0RLDIAijxWpbaM3/f+1QOiu35SHc5SSJEDkWrLRioQBGMk7goG7IxhnbLBbsfe4ok/pddaMH76Y7ER3MnHCy40QyPgj/QAKVCIW0pCuUvHri/QS80bex/LhK62g+M6C9ew0fKqhhOsYb6KQqxm3rcK3jxjk0aD0/rHcIsft1gp8AAAAASUVORK5CYII="></image>
+              </svg>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="manufacturing-process">
+      <h3 class="manufacturing-process__title">Процесс производства</h3>
+      <div class="manufacturing-process__movie"><img src="img/play-button.svg"></div>
+      <p class="manufacturing-process__description">По просьбам наших любимых фолловеров мы сняли для вас
+        подробное видео о том, как появляются наши товары.</p>
+      <button class="button manufacturing-process-button" type="button">Сделать заказ</button>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer-logo" href="#">
+        <svg width="101.62" height="34.06">
+          <use xlink:href="#icon-logo-footer"></use>
+        </svg>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              Мы в инстаграме
+              <svg width="21.77" height="21.33">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              Мы в фейсбуке
+              <svg width="14.96" height="27.72">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--Twitter" href="#">
+              Мы в твиттере
+              <svg width="23.49" height="20.17">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">
+          Разработано
+          <a class="copyright__link" href="#">
+            <svg width="27" height="34">
+              <use xlink:href="#icon-academy"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <section class="modal-add-to-cart">
+    <h3 class="modal-add-to-cart__title">Добавить в корзину</h3>
+    <p>Выберите размер:</p>
+    <ul class="modal-add-to-cart__size-list">
+      <li class="size-list__item"><button type="button">S</button></li>
+      <li class="size-list__item"><button type="button">M</button></li>
+      <li class="size-list__item"><button type="button">L</button></li>
+    </ul>
+    <button class="modal-add-to-cart__button--add" type="button">Добавить</button>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

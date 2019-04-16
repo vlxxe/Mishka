@@ -1,0 +1,169 @@
+.contacts {
+  margin-bottom: 39px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__data {
+  margin: 0;
+  margin-bottom: 37px;
+
+  line-height: 30px;
+  &-wrapper {
+    display: flex;
+  }
+  &__def {
+    margin: 0;
+    margin-left: 31px;
+  }
+}
+
+.contacts__data-wrapper:first-child {
+  margin-bottom: 30px;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 457px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+
+  background-image: url(../img/map-mobile.jpg);
+  background-repeat: no-repeat;
+  iframe {
+    width: 320px;
+  }
+}
+
+.contacts__write-us-button {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    margin-bottom: 57px;
+  }
+
+  .contacts__title {
+    position: relative;
+
+    margin-bottom: 49px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 3px;
+
+    width: 47px;
+    height: 81px;
+
+    background-image: url(../img/contacrs-flag.svg);
+  }
+
+  .contacts__data {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 56px;
+
+    font-size: 17px;
+    &-wrapper {
+      width: 50%;
+    }
+    &__def {
+      margin-left: 24px;
+    }
+  }
+
+  .contacts__data__def--email {
+    border-bottom: 1px solid #46c1ae;
+
+    &:hover {
+      color: #46c1ae;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .contacts__map {
+    width: 768px;
+    margin-bottom: 55px;
+
+    background-image: url(../img/map-tablet@1x.jpg);
+    iframe {
+      width: 768px;
+    }
+  }
+
+  .contacts__write-us-button {
+    width: 230px;
+    margin: auto;
+  }
+}
+
+@media(min-width: 1250px) {
+  .contacts {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 105px;
+    padding-top: 92px;
+  }
+
+  .contacts__title {
+    margin-left: 170px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__title::after {
+    top: -8px;
+    left: -107px;
+  }
+
+  .contacts__data {
+    flex-direction: column;
+    height: 155px;
+    margin: 0;
+    margin-bottom: 74px;
+    margin-left: 174px;
+    &-wrapper {
+      width: auto;
+    }
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 22px;
+    left: 50.5%;
+
+    width: 525px;
+    margin-bottom: 0;
+
+    background-image: url(../img/map-desktop@1x.jpg);
+    iframe {
+      width: 525px;
+    }
+  }
+
+  .contacts__write-us-button {
+    margin: 0;
+    margin-left: 175px;
+  }
+}

@@ -1,0 +1,142 @@
+.page-catalog-goods {
+  margin-bottom: 30px;
+}
+
+.page-catalog-goods__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-catalog-goods__item {
+  margin-bottom: 30px;
+
+  a {
+    display: block;
+
+    text-decoration: none;
+  }
+}
+
+.description-wrapper {
+  margin-top: -6px;
+  padding: 0 27px;
+
+  border: 1px solid #ededed;
+
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 19px;
+
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
+
+.description-wrapper--botoom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 27px;
+
+  border-top: 1px solid #ededed;
+
+  span {
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-catalog-goods {
+    margin-bottom: 47px;
+  }
+
+  .page-catalog-goods__item {
+    display: flex;
+    margin-bottom: 48px;
+
+    a img {
+      width: 334px;
+      height: 334px;
+    }
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 278px;
+    height: 332px;
+    margin: 0;
+    padding: 0 27px;
+
+    h3 {
+      width: 240px;
+
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: auto;
+
+      font-size: 15px;
+    }
+  }
+
+  .description-wrapper--botoom {
+    padding-left: 4px;
+
+    span {
+      font-size: 17px;
+    }
+
+    svg {
+      margin-left: auto;
+
+      :hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-catalog-goods {
+    margin-bottom: 9px;
+  }
+
+  .page-catalog-goods__list {
+    display: flex;
+  }
+
+  .page-catalog-goods__item {
+    flex-wrap: wrap;
+    width: 316px;
+    margin-right: 50px;
+
+    a img {
+      width: 316px;
+      height: 462px;
+    }
+  }
+
+  .description-wrapper {
+    height: 195px;
+    margin-top: -6px;
+
+    &--botoom {
+      padding-left: 0;
+    }
+  }
+}

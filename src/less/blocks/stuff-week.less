@@ -1,0 +1,198 @@
+.stuff-week {
+  margin-bottom: 70px;
+}
+
+.stuff-week__titles-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.stuff-week {
+  &__title-1 {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__title-2 {
+    margin: 0;
+    margin-bottom: 23px;
+
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+}
+
+.stuff-week__main-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.stuff-week__description {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.stuff-week_stats {
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  tr {
+    height: 39px;
+  }
+  td {
+    border-bottom: 2px solid #ececec;
+  }
+}
+
+.stuff-week_stats__column-1 {
+  width: 95px;
+}
+
+.stuff-week__price {
+  margin-bottom: 28px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .stuff-week {
+    margin-bottom: 118px;
+  }
+
+  .stuff-week__titles-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin-bottom: 45px;
+  }
+
+  .stuff-week {
+    &__title-1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__title-2 {
+      width: 125px;
+      margin: auto 0;
+
+      font-size: 17px;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
+
+  .stuff-week__main-wrapper {
+    position: relative;
+
+    width: 668px;
+    min-height: 412px;
+  }
+
+  .stuff-week__main-wrapper--text {
+    width: 334px;
+  }
+
+  .stuff-week__description {
+    margin-bottom: 37px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .stuff-week_stats {
+    width: 290px;
+    margin-bottom: 57px;
+  }
+
+  .stuff-week__price {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-right: 50px;
+
+    font-size: 20px;
+  }
+
+  .stuff-week__image {
+    position: absolute;
+    top: 8px;
+    right: 1px;
+  }
+
+  .stuff-week__order-button {
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+
+    width: 292px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .stuff-week {
+    margin-bottom: 155px;
+  }
+
+  .stuff-week__titles-wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 1050px;
+  }
+
+  .stuff-week {
+    &__title-1 {
+      font-size: 53px;
+      line-height: 57px;
+    }
+    &__title-2 {
+      margin-right: 25px;
+      margin-left: 20px;
+    }
+  }
+
+  .stuff-week__main-wrapper {
+    width: 1050px;
+    min-height: 476px;
+  }
+
+  .stuff-week__main-wrapper--text {
+    width: 350px;
+    margin-left: 175px;
+  }
+
+  .stuff-week__description {
+    margin-bottom: 45px;
+  }
+
+  .stuff-week_stats {
+    margin-bottom: 113px;
+  }
+
+  .stuff-week__image {
+    top: -160px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .stuff-week__price {
+    padding-right: 60px;
+  }
+
+  .stuff-week__order-button {
+    left: 175px;
+  }
+}

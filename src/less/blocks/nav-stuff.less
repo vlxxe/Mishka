@@ -1,0 +1,142 @@
+.nav-stuff {
+  margin-bottom: 27px;
+}
+
+.nav-stuff__list {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-stuff__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  a {
+    display: block;
+    justify-content: space-between;
+    padding: 25px 130px 30px 29px;
+
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.nav-stuff__item:first-child {
+  background-color: #63d1bb;
+
+  ::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+
+    width: 40px;
+    height: 62px;
+
+    background-image: url("../img/nav-stuff__item-1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+  }
+}
+
+.nav-stuff__item:last-child {
+  background-color: #56c3b2;
+
+  ::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 27px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/nav-stuff__item-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nav-stuff {
+    margin-bottom: 28px;
+    padding: 0 50px;
+  }
+
+  .nav-stuff__list {
+    position: relative;
+
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .nav-stuff__item {
+    width: 334px;
+
+    a {
+      padding: 28px 169px 48px 35px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .nav-stuff__item:first-child {
+    ::after {
+      top: 29px;
+      right: 36px;
+    }
+  }
+
+  .nav-stuff__item:last-child {
+    ::after {
+      top: 31px;
+      right: 34px;
+    }
+  }
+
+  .nav-stuff__list::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 34px;
+
+    background-image: url("../img/wave.svg");
+    background-repeat: repeat-x;
+    background-position: 100% 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav-stuff {
+    margin-bottom: 106px;
+    padding: 0 100px;
+  }
+
+  .nav-stuff__list {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .nav-stuff__item {
+    width: 525px;
+  }
+}
